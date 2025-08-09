@@ -3,7 +3,7 @@
 ## 📄 ファイル一覧 / Files  
 - **HTML（English）**: [Rhythmic_Attunement_Theory_Akahoshi_EN.html](https://ryukulogos.github.io/Rhythmic-Attunement-Theory-universe-/)  
 - **PDF（日本語）**: [Rhythmic_Attunement_Theory_Akahoshi_JP.pdf](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/blob/main/Rhythmic%20Attunement%20Theoryjp.pdf)  
-- **PDF（English）**: [Rhythmic_Attunement_Theory_Akahoshi_EN.pdf](./Rhythmic_Attunement_Theory_Akahoshi_EN.pdf)  
+- **PDF（English）**: [Rhythmic_Attunement_Theory_Akahoshi_EN.pdf](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/blob/main/Rhythmic%20Attunement%20Theoryeng.pdf)  
 
 ---
 

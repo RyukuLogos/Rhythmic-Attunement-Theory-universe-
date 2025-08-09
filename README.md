@@ -58,4 +58,26 @@ Interested individuals, please contact:
 All documents and figures in this repository are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.  
 You are free to use, modify, and distribute them, provided that appropriate credit is given.
 
+## 🌐 Public Availability / 公開場所一覧
+
+This theory is mirrored across multiple academic repositories and open science platforms to ensure accessibility and long-term preservation.  
+この理論は、学術系・オープンサイエンス系の複数プラットフォームで公開され、誰でも自由にアクセス可能です。  
+
+### 📄 Primary Pages / 本拠地
+- **GitHub Pages (HTML)** – [Rhythmic Attunement Theory - Full Text](https://ryukulogos.github.io/Rhythmic-Attunement-Theory-universe-/)  
+  （ブラウザで直接閲覧可能）
+
+### 📚 Archival Repositories / アーカイブ
+- **Zenodo (DOI付きPDF)** – [DOI: 10.xxxx/zenodo.xxxxx](https://zenodo.org/records/16785216)  
+- **OSF (PDF & Wiki)** – [OSF Project Page](https://osf.io/tjuvy/wiki/home/)  
+
+### 🛰 Distributed Access / その他の公開先
+- ResearchGate: [Link]  
+- Figshare: [Link]  
+- Medium: [Link to article]  
+
+---
+
+All listed mirrors contain the same version of the theory. Please cite using the Zenodo DOI above.
+
 ---

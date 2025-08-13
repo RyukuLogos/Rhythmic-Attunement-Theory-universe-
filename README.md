@@ -2,7 +2,7 @@
 # Rhythmic Attunement Theory (R. L. Akahoshi)
 
 ## 📄 ファイル一覧 / Files  
-[日本語.html](Raw URL)  
+[日本語.html](https://raw.githubusercontent.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/refs/heads/main/RAT_theory_explained_EN.html)  
 [english.html](Raw URL)
 ---
 

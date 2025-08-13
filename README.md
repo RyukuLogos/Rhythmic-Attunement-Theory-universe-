@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16785216.svg)](https://doi.org/10.5281/zenodo.16785216)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16833967.svg)](https://doi.org/10.5281/zenodo.16833967)
 # Rhythmic Attunement Theory (R. L. Akahoshi)
 
 ## 📄 ダウンロード / Download
@@ -83,7 +83,7 @@ This theory is mirrored across multiple academic repositories and open science p
 - **GitHub Pages (HTML)** – [Rhythmic Attunement Theory - Full Text](https://ryukulogos.github.io/Rhythmic-Attunement-Theory-universe-/)  
 
 ### 📚 Archival Repositories / アーカイブ
-- **Zenodo (DOI付きPDF)** – [DOI: 10.5281/zenodo.16785216](https://zenodo.org/records/16785216)  
+- **Zenodo (DOI付きPDF)** – [DOI: 10.5281/zenodo.16833967](https://zenodo.org/records/16833967)  
 - **OSF (PDF & Wiki)** – [OSF Project Page](https://osf.io/tjuvy/wiki/home/)  
 
 ### 🛰 Distributed Access / その他の公開先

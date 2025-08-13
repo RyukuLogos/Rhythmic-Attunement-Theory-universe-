@@ -4,7 +4,7 @@
 ## 📄 ファイル一覧 / Files  
 Click the links below to download the HTML files directly:
 
-- **[📥 Japanese Version (RAT_theory_explained.html)](https://github.com/<your-username>/<your-repo>/raw/main/RAT_theory_explained.html)**
+- **[📥 Japanese Version (RAT_theory_explained.html)](https://raw.githubusercontent.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/refs/heads/main/RAT_theory_explained.html)**
 - **[📥 English Version (RAT_theory_explained_EN.html)](https://github.com/<your-username>/<your-repo>/raw/main/RAT_theory_explained_EN.html)**
 ---
 

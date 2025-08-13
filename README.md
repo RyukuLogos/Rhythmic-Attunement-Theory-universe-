@@ -6,7 +6,7 @@
 最新版の Rhythmic Attunement Theory HTML ファイル（日本語版・英語版）は、  
 以下のリンクからまとめてダウンロードできます。
 
-**[📥 Download (HTML, JP & EN)](https://github.com/<ユーザー名>/<リポジトリ名>/releases/download/<タグ名>/<ファイル名>)**
+**[📥 Download (HTML, JP & EN)](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/archive/refs/tags/v3.zip)**
 
 > ※ ブラウザによってはクリックで開く場合があります。右クリックして「名前を付けてリンク先を保存」を選択してください。
 
@@ -15,7 +15,7 @@
 The latest Rhythmic Attunement Theory HTML files (Japanese & English)  
 can be downloaded together from the link below:
 
-**[📥 Download (HTML, JP & EN)](https://github.com/<USER>/<REPO>/releases/download/<TAG>/<FILENAME>)**
+**[📥 Download (HTML, JP & EN)](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/archive/refs/tags/v3.zip)**
 
 > Note: Some browsers may open the file instead of downloading it.  
 > Right-click the link and choose “Save link as…” if needed.

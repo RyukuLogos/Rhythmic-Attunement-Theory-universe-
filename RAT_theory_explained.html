@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAT理論（Rhythmic Attunement Theory）完全解説</title>
+<!-- MathJax for TeX -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<style>
+:root{
+  --bg:#ffffff;--fg:#0f172a;--muted:#64748b;--accent:#0ea5e9;--card:#f8fafc;--border:#e5e7eb;
+  --code:#0b1020;--code-bg:#f1f5f9;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0b1020;--fg:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--card:#10172a;--border:#1f2937;--code:#e5e7eb;--code-bg:#0f172a;}
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Hiragino Sans","Noto Sans JP","Yu Gothic UI","Yu Gothic","Meiryo",Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.7}
+main{max-width:1000px;margin:0 auto;padding:32px 20px}
+.header{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:18px;margin-bottom:24px}
+h1{font-size:clamp(24px,3.6vw,38px);letter-spacing:.02em;margin:0}
+.sub{color:var(--muted);font-size:14px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;margin:18px 0}
+.toc h2{font-size:18px;margin:0 0 8px 0}
+.toc a{color:var(--accent);text-decoration:none}
+.toc ol{margin:0;padding-left:20px}
+section{padding:18px 0;border-bottom:1px dashed var(--border)}
+h2{font-size:clamp(18px,2.8vw,26px);margin:0 0 12px 0}
+h3{font-size:clamp(16px,2.3vw,20px);margin:10px 0 6px}
+p,li{font-size:16px}
+.note{background:var(--card);border-left:4px solid var(--accent);padding:12px 14px;border-radius:10px}
+kbd,code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code-bg);color:var(--code);padding:2px 6px;border-radius:6px}
+.eq{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:10px 12px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px}
+.footer{color:var(--muted);font-size:14px;margin-top:24px}
+.small{font-size:14px;color:var(--muted)}
+.badge{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted);margin-right:6px}
+</style>
+</head>
+<body>
+<main>
+  <div class="header">
+    <div>
+      <h1>RAT理論（Rhythmic Attunement Theory）完全解説</h1>
+      <div class="sub">— 「位相の閉じ」とズレ補正から宇宙定数を導く —</div>
+    </div>
+    <div class="sub">
+      <span class="badge">v1.0</span>
+      <span class="badge">MathJax</span>
+      <span class="badge">HTML</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#overview">概観と直感</a></li>
+      <li><a href="#axioms">公理と不変量</a></li>
+      <li><a href="#derivation">導出の最短ルート</a></li>
+      <li><a href="#constants">宇宙定数の固定と無次元指紋</a></li>
+      <li><a href="#predictions">予言・テスト可能性</a></li>
+      <li><a href="#cells">セル（閉じ単位）の意味</a></li>
+      <li><a href="#gauges">ゲージ配分（L, κ, α の割り当て）</a></li>
+      <li><a href="#faq">よくある疑問</a></li>
+    </ol>
+  </div>
+
+  <section id="overview">
+    <h2>1. 概観と直感</h2>
+    <p>RAT理論は、「<strong>位相の閉じ</strong>」からのズレ（角度）を維持するための張力エネルギーが質量になる、という最小主義の枠組みです。最小形は</p>
+    <div class="eq">$$\boxed{mc^2 = A\,\theta^2}$$</div>
+    <p>ここで、$\theta$ は閉じからの位相ズレ（無次元角）、$A$ はそのズレを保持するテンションのエネルギースケールです。直感としては、<em>「波がきれいに一周で重なれない（閉じない）と、ズレの分だけエネルギーを背負う」</em>という像です。</p>
+  </section>
+
+  <section id="axioms">
+    <h2>2. 公理と不変量</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>公理 A（基準化）</h3>
+        <p>位相スケールの正規化：<br><span class="eq">$$\boxed{\kappa = 1}$$</span></p>
+        <p>経験則（位相ズレの質量依存）：<br><span class="eq">$$\boxed{\theta = \sqrt{m}}$$</span></p>
+      </div>
+      <div class="card">
+        <h3>公理 B（無次元指紋）</h3>
+        <p>張力分解から現れる係数とプランク質量の無次元積：<br>
+        <span class="eq">$$\boxed{\Xi \equiv M\,M_P^2 = 2}$$</span>
+        </p>
+        <p class="small">ここで $M_P^2=\hbar c/G$。$\Xi=2$ は <em>独立な要求</em>（Maxwellの $c$、位相張力、臨界閉じ長）を同時に満たす「指紋」です。</p>
+      </div>
+      <div class="card">
+        <h3>この公理から落ちる不変量</h3>
+        <ul>
+          <li>閉じ最小長：$L=\ell_P$（プランク長）</li>
+          <li>光速：$c$（$c^2=A$ に一致）</li>
+          <li>量子定数：$\hbar$（位相と運動の橋渡し）</li>
+          <li>電磁定数：$\varepsilon_0,\ \mu_0$（$c^2=1/(\varepsilon_0\mu_0)$）</li>
+          <li>セル数係数：$\alpha$（単位質量あたりセル数）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">要点：<strong>公理（κ=1, θ=√m, Ξ=2）を先に固定</strong>すると、$L,\ c,\ \alpha$ などの宇宙定数は「結果」として一意に決まります。</div>
+  </section>
+
+  <section id="derivation">
+    <h2>3. 導出の最短ルート</h2>
+    <h3>0) 登場人物</h3>
+    <ul>
+      <li>位相ズレ角：$\theta$（無次元）</li>
+      <li>張力スケール：$A$（エネルギー）</li>
+      <li>狙いの最小形：$\boxed{mc^2 = A\,\theta^2}$</li>
+    </ul>
+
+    <h3>1) シュレの運動項 ⇒ 位相ズレの張力</h3>
+    <div class="eq">
+      $$E_{\rm cell}\approx \frac{\hbar^2}{2m}\left(\frac{\theta}{L}\right)^2$$
+    </div>
+    <p>位相勾配 $\nabla\phi\!\sim\!\theta/L$ をセル長 $L$ 上で評価。</p>
+
+    <h3>2) セル束＝粒子、静止エネルギーに等置</h3>
+    <div class="eq">
+      $$mc^2=N_{\rm cell}(m)\,\frac{\hbar^2}{2m}\frac{\theta^2}{L^2} \quad\Rightarrow\quad mc^2=A\,\theta^2,$$
+      $$A\equiv \alpha\frac{\hbar^2}{2L^2},\ \ N_{\rm cell}(m)=\alpha m$$
+    </div>
+
+    <h3>3) 経験則 $\;\theta=\kappa\sqrt{m}$ を採用</h3>
+    <div class="eq">$$mc^2=A\,\kappa^2 m \ \Rightarrow\ \boxed{c^2=A\,\kappa^2}$$</div>
+
+    <h3>4) Maxwell と接続</h3>
+    <div class="eq">
+      $$c^2=\frac{1}{\varepsilon_0\mu_0},\qquad A=\frac{\hbar^2}{2}\frac{M}{L^2} \ \Rightarrow\ M=\frac{2L^2}{\hbar^2\kappa^2\varepsilon_0\mu_0}$$
+    </div>
+  </section>
+
+  <section id="constants">
+    <h2>4. 宇宙定数の固定と無次元指紋</h2>
+    <p>公理（$\kappa=1,\ \Xi=2$）から<strong>臨界閉じ長</strong>は $L=\ell_P$ に固定され、</p>
+    <div class="eq">
+      $$A=\frac{\hbar^2}{2}\frac{M}{L^2}=c^2,\qquad \Xi=M\,M_P^2=2$$
+    </div>
+    <p>が成り立ちます。よって $A=c^2$、さらに $c^2=1/(\varepsilon_0\mu_0)$ と整合します。単位質量あたりセル数 $\alpha$ は</p>
+    <div class="eq">
+      $$c^2=\frac{\hbar^2}{2L^2}\,\alpha\,\kappa^2 \quad(\kappa=1,\ L=\ell_P)\ \Rightarrow\ \boxed{\alpha=\frac{2\ell_P^2}{\hbar^2\varepsilon_0\mu_0}}$$
+    </div>
+    <p class="note">結果：$\{L,\hbar,c,\alpha,\varepsilon_0,\mu_0\}$ は連動して固定され、不変。</p>
+  </section>
+
+  <section id="predictions">
+    <h2>5. 予言・テスト可能性</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>無次元指紋</h3>
+        <p>$$\boxed{\Xi = 2}$$ を最新定数で再計算。$L$ に $\ell_P$ を入れると厳密に 2 に極限する。</p>
+      </div>
+      <div class="card">
+        <h3>位相ズレ角と比</h3>
+        <p>$\kappa=1$ の規約で $\theta=\sqrt{m}$。比は規約に依らず、<em>純粋予言</em>：</p>
+        <div class="eq">
+          $$\frac{\theta_\mu}{\theta_e}=\sqrt{\frac{m_\mu}{m_e}},\ 
+            \frac{\theta_\tau}{\theta_\mu}=\sqrt{\frac{m_\tau}{m_\mu}}$$
+        </div>
+      </div>
+      <div class="card">
+        <h3>崩壊幅の m^5 則</h3>
+        <p>$mc^2=A\theta^2$ と $\theta\propto\sqrt{m}$ から位相空間の自然スケールが立ち上がり、
+        $$\Gamma\propto m^5,\ \ \tau\propto 1/m^5$$
+        の桁クラスが説明可能。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cells">
+    <h2>6. セル（閉じ単位）の意味</h2>
+    <p>セルは「位相ズレ補正を局所的に計算できる最小領域」。結晶格子のような実体ではなく、解析上の分割単位です。</p>
+    <div class="eq">
+      $$E_{\rm cell}\approx \frac{\hbar^2}{2m}\left(\frac{\theta}{L}\right)^2,\qquad
+        E_{\rm rest}=N_{\rm cell}(m)\,E_{\rm cell}$$
+    </div>
+    <p>仮定 $N_{\rm cell}\propto m$ により $mc^2=A\theta^2$ へ簡約します。</p>
+  </section>
+
+  <section id="gauges">
+    <h2>7. ゲージ配分（L, κ, α の割り当て）</h2>
+    <p>同じ $c^2$ を満たすための配分はいくつかあるが、物理的に自然なのは</p>
+    <ul>
+      <li><strong>S1（推奨）</strong>：$L=\ell_P,\ \kappa=1 \Rightarrow \alpha=\dfrac{2\ell_P^2}{\hbar^2\varepsilon_0\mu_0}$（$\Xi=2$ 成立）</li>
+      <li>S2：$\alpha=1,\ \kappa=1 \Rightarrow L=\hbar/(\sqrt{2}\,c)$（超プランクで不自然）</li>
+      <li>S3：$\alpha=1,\ L=\ell_P \Rightarrow \kappa\gg 1$（規格化が巨大で不自然）</li>
+    </ul>
+    <p class="note">結論：<strong>自由度の重みは α に寄せる</strong>配分が最も自然で、無次元指紋 2 とも噛み合う。</p>
+  </section>
+
+  <section id="faq">
+    <h2>8. よくある疑問</h2>
+    <h3>Q1. 光速 $c$ の数値を理論だけで「予言」しているの？</h3>
+    <p>A. 厳密には、公理（基準化）を採用した上で <em>整合条件</em>として $A=c^2$ が落ちてくる形です。よって「数値の独立予言」ではなく、「構造整合（指紋＝2）」の主張です。</p>
+    <h3>Q2. $\theta\propto\sqrt{m}$ は経験則では？</h3>
+    <p>A. 現段階では経験則。ただしセル密度と閉じスケールの幾何から第一原理導出できる余地があり、今後の中核課題です。</p>
+    <h3>Q3. 宇宙論や重力との接続は？</h3>
+    <p>A. 「ズレのフラストレーション＝空間生成」「補正の張力＝重力」の絵と、$L=\ell_P$ の臨界閉じを整合させることで、時空の基礎付けに接続します（数理化と観測予言が次段）。</p>
+  </section>
+
+  <div class="footer">
+    <p>© RAT Theory — 本ドキュメントは、位相の閉じと張力エネルギーから質量と宇宙定数を再解釈する枠組みの技術的サマリーです。</p>
+  </div>
+</main>
+</body>
+</html>

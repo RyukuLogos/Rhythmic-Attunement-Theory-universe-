@@ -2,10 +2,13 @@
 # Rhythmic Attunement Theory (R. L. Akahoshi)
 
 ## 📄 ファイル一覧 / Files  
-Click the links below to download the HTML files directly:
+Click the links below to download the HTML files directly (from GitHub Releases):
 
-- **[📥 Japanese Version (RAT_theory_explained.html)](https://raw.githubusercontent.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/refs/heads/main/RAT_theory_explained.html)**
-- **[📥 English Version (RAT_theory_explained_EN.html)](https://github.com/<your-username>/<your-repo>/raw/main/RAT_theory_explained_EN.html)**
+- **[📥 Japanese Version (RAT_theory_explained.html)](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/releases/download/v1.0/RAT_theory_explained.html)**
+- **[📥 English Version (RAT_theory_explained_EN.html)](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/releases/download/v1.0/RAT_theory_explained_EN.html)**
+
+> 💡 *If the file opens in your browser instead of downloading, right-click the link and choose “Save link as…”.*
+
 ---
 
 ## 🪐 理論概要 / Theory Overview
@@ -58,6 +61,8 @@ Interested individuals, please contact:
 All documents and figures in this repository are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.  
 You are free to use, modify, and distribute them, provided that appropriate credit is given.
 
+---
+
 ## 🌐 Public Availability / 公開場所一覧
 
 This theory is mirrored across multiple academic repositories and open science platforms to ensure accessibility and long-term preservation.  
@@ -68,7 +73,7 @@ This theory is mirrored across multiple academic repositories and open science p
   （ブラウザで直接閲覧可能）
 
 ### 📚 Archival Repositories / アーカイブ
-- **Zenodo (DOI付きPDF)** – [DOI: 10.xxxx/zenodo.xxxxx](https://zenodo.org/records/16785216)  
+- **Zenodo (DOI付きPDF)** – [DOI: 10.5281/zenodo.16785216](https://zenodo.org/records/16785216)  
 - **OSF (PDF & Wiki)** – [OSF Project Page](https://osf.io/tjuvy/wiki/home/)  
 
 ### 🛰 Distributed Access / その他の公開先
@@ -79,5 +84,6 @@ This theory is mirrored across multiple academic repositories and open science p
 ---
 
 All listed mirrors contain the same version of the theory. Please cite using the Zenodo DOI above.
+
 
 ---

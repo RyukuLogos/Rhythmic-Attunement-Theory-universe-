@@ -2,12 +2,24 @@
 # Rhythmic Attunement Theory (R. L. Akahoshi)
 
 ## 📄 ファイル一覧 / Files  
-Click the links below to download the HTML files directly (from GitHub Releases):
+## 📄 ダウンロード / Download
 
-- **[📥 Japanese Version (RAT_theory_explained.html)](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/releases/download/v1.0/RAT_theory_explained.html)**
-- **[📥 English Version (RAT_theory_explained_EN.html)](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/releases/download/v1.0/RAT_theory_explained_EN.html)**
+最新版の Rhythmic Attunement Theory HTML ファイル（日本語版・英語版）は、  
+以下のリンクからまとめてダウンロードできます。
 
-> 💡 *If the file opens in your browser instead of downloading, right-click the link and choose “Save link as…”.*
+**[📥 Download (HTML, JP & EN)](https://github.com/<ユーザー名>/<リポジトリ名>/releases/download/<タグ名>/<ファイル名>)**
+
+> ※ ブラウザによってはクリックで開く場合があります。右クリックして「名前を付けてリンク先を保存」を選択してください。
+
+---
+
+The latest Rhythmic Attunement Theory HTML files (Japanese & English)  
+can be downloaded together from the link below:
+
+**[📥 Download (HTML, JP & EN)](https://github.com/<USER>/<REPO>/releases/download/<TAG>/<FILENAME>)**
+
+> Note: Some browsers may open the file instead of downloading it.  
+> Right-click the link and choose “Save link as…” if needed.
 
 ---
 

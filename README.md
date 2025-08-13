@@ -81,7 +81,6 @@ This theory is mirrored across multiple academic repositories and open science p
 
 ### 📄 Primary Pages / 本拠地
 - **GitHub Pages (HTML)** – [Rhythmic Attunement Theory - Full Text](https://ryukulogos.github.io/Rhythmic-Attunement-Theory-universe-/)  
-  （ブラウザで直接閲覧可能）
 
 ### 📚 Archival Repositories / アーカイブ
 - **Zenodo (DOI付きPDF)** – [DOI: 10.5281/zenodo.16785216](https://zenodo.org/records/16785216)  

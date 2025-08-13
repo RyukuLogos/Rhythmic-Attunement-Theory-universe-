@@ -1,7 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16785216.svg)](https://doi.org/10.5281/zenodo.16785216)
 # Rhythmic Attunement Theory (R. L. Akahoshi)
 
-## 📄 ファイル一覧 / Files  
 ## 📄 ダウンロード / Download
 
 最新版の Rhythmic Attunement Theory HTML ファイル（日本語版・英語版）は、  

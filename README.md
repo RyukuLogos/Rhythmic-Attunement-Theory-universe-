@@ -2,10 +2,8 @@
 # Rhythmic Attunement Theory (R. L. Akahoshi)
 
 ## 📄 ファイル一覧 / Files  
-- **HTML（English）**: [Rhythmic_Attunement_Theory_Akahoshi_EN.html](https://ryukulogos.github.io/Rhythmic-Attunement-Theory-universe-/)  
-- **PDF（日本語）**: [Rhythmic_Attunement_Theory_Akahoshi_JP.pdf](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/blob/main/Rhythmic%20Attunement%20Theoryjp.pdf)  
-- **PDF（English）**: [Rhythmic_Attunement_Theory_Akahoshi_EN.pdf](https://github.com/RyukuLogos/Rhythmic-Attunement-Theory-universe-/blob/main/Rhythmic%20Attunement%20Theoryeng.pdf)  
-
+[日本語.html](Raw URL)  
+[english.html](Raw URL)
 ---
 
 ## 🪐 理論概要 / Theory Overview

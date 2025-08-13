@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAT Theory (Rhythmic Attunement Theory) — Full Explainer</title>
+<!-- MathJax for TeX -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<style>
+:root{
+  --bg:#ffffff;--fg:#0f172a;--muted:#64748b;--accent:#0ea5e9;--card:#f8fafc;--border:#e5e7eb;
+  --code:#0b1020;--code-bg:#f1f5f9;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0b1020;--fg:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--card:#10172a;--border:#1f2937;--code:#e5e7eb;--code-bg:#0f172a;}
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Hiragino Sans","Noto Sans JP","Yu Gothic UI","Yu Gothic","Meiryo",Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.7}
+main{max-width:1000px;margin:0 auto;padding:32px 20px}
+.header{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:18px;margin-bottom:24px}
+h1{font-size:clamp(24px,3.6vw,38px);letter-spacing:.02em;margin:0}
+.sub{color:var(--muted);font-size:14px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;margin:18px 0}
+.toc h2{font-size:18px;margin:0 0 8px 0}
+.toc a{color:var(--accent);text-decoration:none}
+.toc ol{margin:0;padding-left:20px}
+section{padding:18px 0;border-bottom:1px dashed var(--border)}
+h2{font-size:clamp(18px,2.8vw,26px);margin:0 0 12px 0}
+h3{font-size:clamp(16px,2.3vw,20px);margin:10px 0 6px}
+p,li{font-size:16px}
+.note{background:var(--card);border-left:4px solid var(--accent);padding:12px 14px;border-radius:10px}
+kbd,code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--code-bg);color:var(--code);padding:2px 6px;border-radius:6px}
+.eq{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:10px 12px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px}
+.footer{color:var(--muted);font-size:14px;margin-top:24px}
+.small{font-size:14px;color:var(--muted)}
+.badge{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted);margin-right:6px}
+</style>
+</head>
+<body>
+<main>
+  <div class="header">
+    <div>
+      <h1>RAT Theory (Rhythmic Attunement Theory) — Full Explainer</h1>
+      <div class="sub">— From “closure” of phase and its tension to the constants of nature —</div>
+    </div>
+    <div class="sub">
+      <span class="badge">v1.0</span>
+      <span class="badge">MathJax</span>
+      <span class="badge">HTML</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview & Intuition</a></li>
+      <li><a href="#axioms">Axioms & Invariants</a></li>
+      <li><a href="#derivation">Shortest Derivation</a></li>
+      <li><a href="#constants">Fixing the Constants & the Dimensionless Fingerprint</a></li>
+      <li><a href="#predictions">Predictions & Testability</a></li>
+      <li><a href="#cells">What “Cells” Mean</a></li>
+      <li><a href="#gauges">Gauge Allocation (L, κ, α)</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </div>
+
+  <section id="overview">
+    <h2>1. Overview & Intuition</h2>
+    <p>RAT says: the <strong>tension energy</strong> required to maintain a deviation from perfect <em>phase closure</em> becomes mass. The minimal form is</p>
+    <div class="eq">$$\boxed{mc^2 = A\,\theta^2}$$</div>
+    <p>Here $\theta$ is the phase deviation (dimensionless angle) from closure, and $A$ is the energy scale of the tension that keeps the deviation. Intuitively: <em>if a wave cannot close and self-overlap neatly in one turn, it must store energy proportional to that misfit.</em></p>
+  </section>
+
+  <section id="axioms">
+    <h2>2. Axioms & Invariants</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Axiom A (Normalization)</h3>
+        <p>Phase scale normalization:<br><span class="eq">$$\boxed{\kappa = 1}$$</span></p>
+        <p>Empirical mass dependence of the phase deviation:<br><span class="eq">$$\boxed{\theta = \sqrt{m}}$$</span></p>
+      </div>
+      <div class="card">
+        <h3>Axiom B (Dimensionless Fingerprint)</h3>
+        <p>From the tension decomposition a dimensionless product appears:<br>
+        <span class="eq">$$\boxed{\Xi \equiv M\,M_P^2 = 2}$$</span>
+        </p>
+        <p class="small">With $M_P^2=\hbar c/G$. The value $\Xi=2$ emerges as a “fingerprint” that simultaneously satisfies independent requirements (Maxwell $c$, tension form, and the critical closure length).</p>
+      </div>
+      <div class="card">
+        <h3>Invariants implied by the axioms</h3>
+        <ul>
+          <li>Critical closure length: $L=\ell_P$ (Planck length)</li>
+          <li>Speed of light: $c$ (with $A=c^2$)</li>
+          <li>Quantum constant: $\hbar$</li>
+          <li>Electromagnetic constants: $\varepsilon_0,\ \mu_0$ ($c^2=1/(\varepsilon_0\mu_0)$)</li>
+          <li>Cell-count coefficient: $\alpha$ (cells per unit mass)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">Bottom line: <strong>fixing the axioms</strong> ($\kappa=1,\ \theta=\sqrt{m},\ \Xi=2$) makes $L,\ c,\ \alpha$ etc. fall out as <em>results</em>, not inputs.</div>
+  </section>
+
+  <section id="derivation">
+    <h2>3. Shortest Derivation</h2>
+    <h3>0) Cast</h3>
+    <ul>
+      <li>Phase deviation: $\theta$ (dimensionless)</li>
+      <li>Tension scale: $A$ (energy)</li>
+      <li>Goal (minimal form): $\boxed{mc^2 = A\,\theta^2}$</li>
+    </ul>
+
+    <h3>1) Schrödinger kinetic term ⇒ tension from phase gradient</h3>
+    <div class="eq">
+      $$E_{\rm cell}\approx \frac{\hbar^2}{2m}\left(\frac{\theta}{L}\right)^2$$
+    </div>
+    <p>Using the phase gradient $\nabla\phi\!\sim\!\theta/L$ over a cell length $L$.</p>
+
+    <h3>2) Bundle of cells = particle; match rest energy</h3>
+    <div class="eq">
+      $$mc^2=N_{\rm cell}(m)\,\frac{\hbar^2}{2m}\frac{\theta^2}{L^2} \quad\Rightarrow\quad mc^2=A\,\theta^2,$$
+      $$A\equiv \alpha\frac{\hbar^2}{2L^2},\ \ N_{\rm cell}(m)=\alpha m$$
+    </div>
+
+    <h3>3) Adopt the empirical rule $\;\theta=\kappa\sqrt{m}$</h3>
+    <div class="eq">$$mc^2=A\,\kappa^2 m \ \Rightarrow\ \boxed{c^2=A\,\kappa^2}$$</div>
+
+    <h3>4) Connect to Maxwell</h3>
+    <div class="eq">
+      $$c^2=\frac{1}{\varepsilon_0\mu_0},\qquad A=\frac{\hbar^2}{2}\frac{M}{L^2} \ \Rightarrow\ M=\frac{2L^2}{\hbar^2\kappa^2\varepsilon_0\mu_0}$$
+    </div>
+  </section>
+
+  <section id="constants">
+    <h2>4. Fixing the Constants & the Dimensionless Fingerprint</h2>
+    <p>From the axioms ($\kappa=1,\ \Xi=2$) the <strong>critical closure length</strong> is fixed to $L=\ell_P$, and</p>
+    <div class="eq">
+      $$A=\frac{\hbar^2}{2}\frac{M}{L^2}=c^2,\qquad \Xi=M\,M_P^2=2$$
+    </div>
+    <p>hold. Hence $A=c^2$, consistent with $c^2=1/(\varepsilon_0\mu_0)$. The cell-count coefficient $\alpha$ follows as</p>
+    <div class="eq">
+      $$c^2=\frac{\hbar^2}{2L^2}\,\alpha\,\kappa^2 \quad(\kappa=1,\ L=\ell_P)\ \Rightarrow\ \boxed{\alpha=\frac{2\ell_P^2}{\hbar^2\varepsilon_0\mu_0}}$$
+    </div>
+    <p class="note">Result: $\{L,\hbar,c,\alpha,\varepsilon_0,\mu_0\}$ are jointly fixed—invariants.</p>
+  </section>
+
+  <section id="predictions">
+    <h2>5. Predictions & Testability</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Dimensionless Fingerprint</h3>
+        <p>Recompute $$\boxed{\Xi = 2}$$ with latest constants. Setting $L=\ell_P$ makes it approach 2 to machine precision.</p>
+      </div>
+      <div class="card">
+        <h3>Phase angles & ratios</h3>
+        <p>With $\kappa=1$, $\theta=\sqrt{m}$. Ratios are <em>kappa-free predictions</em>:</p>
+        <div class="eq">
+          $$\frac{\theta_\mu}{\theta_e}=\sqrt{\frac{m_\mu}{m_e}},\ 
+            \frac{\theta_\tau}{\theta_\mu}=\sqrt{\frac{m_\tau}{m_\mu}}$$
+        </div>
+      </div>
+      <div class="card">
+        <h3>$m^5$ law for widths</h3>
+        <p>From $mc^2=A\theta^2$ and $\theta\propto\sqrt{m}$ one gets the natural scaling
+        $$\Gamma\propto m^5,\ \ \tau\propto 1/m^5,$$
+        capturing the correct order-of-magnitude trend across families.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cells">
+    <h2>6. What “Cells” Mean</h2>
+    <p>A “cell” is the minimal analytical unit over which phase deviation energy can be evaluated. It is not a literal substructure but a computational block for the local phase gradient energy.</p>
+    <div class="eq">
+      $$E_{\rm cell}\approx \frac{\hbar^2}{2m}\left(\frac{\theta}{L}\right)^2,\qquad
+        E_{\rm rest}=N_{\rm cell}(m)\,E_{\rm cell}$$
+    </div>
+    <p>With $N_{\rm cell}\propto m$ the minimal form $mc^2=A\theta^2$ follows.</p>
+  </section>
+
+  <section id="gauges">
+    <h2>7. Gauge Allocation (L, κ, α)</h2>
+    <p>Different allocations can reproduce the same $c^2$, but the most natural is:</p>
+    <ul>
+      <li><strong>S1 (recommended)</strong>: $L=\ell_P,\ \kappa=1 \Rightarrow \alpha=\dfrac{2\ell_P^2}{\hbar^2\varepsilon_0\mu_0}$ (yields $\Xi=2$)</li>
+      <li>S2: $\alpha=1,\ \kappa=1 \Rightarrow L=\hbar/(\sqrt{2}\,c)$ (sub-Planck, unnatural)</li>
+      <li>S3: $\alpha=1,\ L=\ell_P \Rightarrow \kappa\gg 1$ (unnaturally large normalization)</li>
+    </ul>
+    <p class="note">Conclusion: it is most natural to <strong>assign the freedom to α</strong>, which also aligns with the fingerprint $\Xi=2$.</p>
+  </section>
+
+  <section id="faq">
+    <h2>8. FAQ</h2>
+    <h3>Q1. Does RAT “predict” the numeric value of $c$?</h3>
+    <p>A. Strictly, with the axioms (normalization) adopted, $A=c^2$ emerges as a <em>consistency condition</em>. It is thus a structural fit—framed by the dimensionless fingerprint—rather than an independent numerical prediction.</p>
+    <h3>Q2. Isn’t $\theta\propto\sqrt{m}$ empirical?</h3>
+    <p>A. Currently yes, but it plausibly follows from cell density plus closure-scale geometry. Deriving it from first principles is a central next step.</p>
+    <h3>Q3. How does this tie to gravity/cosmology?</h3>
+    <p>A. The picture “frustration of non-closable waves generates space; the corrective tension is gravity” can be made consistent with $L=\ell_P$ as the critical closure scale. Formalization and observables are the next milestones.</p>
+  </section>
+
+  <div class="footer">
+    <p>© RAT Theory — This document summarizes a framework that reinterprets mass and universal constants from phase closure and tension energy.</p>
+  </div>
+</main>
+</body>
+</html>
